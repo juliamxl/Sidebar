@@ -1,35 +1,108 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+
+* {
     margin: 0;
-}
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+  }
+  
+  body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #dce4e3;
+  }
 
 .navbar{
-    
-    margin: 12px;
+    background-color: #18c29c;
+    width: 78px;
+    height: 100vh;
+    padding: 16px 14px;
+    transition: all 0.5s ease-out;
 }
 
-.btn-icon{
-    width: 50px;
-    height: 50px;
+.navbar .petLogo{
+    display: none;
 }
 
-.btn-icon:hover{
-    cursor: pointer;
+.navbar.active{
+    background-color: #18c29c;
+    padding: 16px 14px;
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    transition: all 0.5s ease-out;
+}
+
+.navbar.active .petLogo{
+   display: block;
 }
 
 .logo{
-    width: 300px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
-.itens{
+.navbar.active .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-icon{
+    cursor: pointer;
+}
+
+.navbar ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.navbar ul .texto{
+    display: none;
+}
+
+.navbar.active ul .texto{
+    display: block;
+    margin-left: 12px;
+}
+
+.navbar ul li{
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    list-style: none;
+    border-radius: 12px;
+}
+
+.navbar.active ul li{
     width: 100%;
-    background-color: rgb(141, 16, 158);
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
 }
 
-.itens.active{
+
+
+.navbar ul li:hover{
+    background-color: #8ed7c6;
     
 }
+
+
+
+
+
+
+
+
+
 
 
 

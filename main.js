@@ -1,5 +1,5 @@
-let navbar = document.querySelector(".itens")
+let navbar = document.querySelector(".navbar")
 
 function openNav(){
-    navbar.classList.toggle(".active")
+    navbar.classList.toggle("active")
 }
