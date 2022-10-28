@@ -6,29 +6,29 @@
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-  }
-  
-  body {
+}
+
+body {
     position: relative;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
     background: #dce4e3;
-  }
+}
 
-.navbar{
+.navbar {
     background-color: #18c29c;
     width: 78px;
     height: 100vh;
-    padding: 16px 14px;
+    padding: 20px 14px;
     transition: all 0.5s ease-out;
 }
 
-.navbar .petLogo{
+.navbar .petLogo {
     display: none;
 }
 
-.navbar.active{
+.navbar.active {
     background-color: #18c29c;
     padding: 16px 14px;
     width: 240px;
@@ -37,40 +37,40 @@
     transition: all 0.5s ease-out;
 }
 
-.navbar.active .petLogo{
-   display: block;
+.navbar.active .petLogo {
+    display: block;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
 }
 
-.navbar.active .logo{
+.navbar.active .logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.btn-icon{
+.btn-icon {
     cursor: pointer;
 }
 
-.navbar ul{
-    margin-top: 20px;
+.navbar ul {
+    margin-top: 30px;
     list-style: none;
 }
 
-.navbar ul .texto{
+.navbar ul .texto {
     display: none;
 }
 
-.navbar.active ul .texto{
+.navbar.active ul .texto {
     display: block;
     margin-left: 12px;
 }
 
-.navbar ul li{
+.navbar ul li {
     display: flex;
     margin-top: 8px;
     justify-content: center;
@@ -81,16 +81,56 @@
     border-radius: 12px;
 }
 
-.navbar.active ul li{
+.navbar.active ul li {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     padding: 12px;
 }
 
-.navbar ul li:hover{
+.navbar ul li:hover {
     background-color: #8ed7c6;
-    
+
 }
 
+ul li input {
+    width: 90%;
+    background-color: #8ed7c6;
+    border-style: none;
+}
 
+ul li:nth-child(1) {
+    background-color: #8ed7c6;
+}
+
+.navbar .profile-user {
+    display: none;
+}
+
+.navbar.active .profile-user {
+    display: block;
+}
+
+.profile-user {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 240px;
+    background-color: #8ed7c6;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    height: 45px;
+    width: 45px;
+    border-radius: 12px;
+}
+
+.profile:nth-child(4) {
+    width: 20px;
+    height: 20px;
+}
