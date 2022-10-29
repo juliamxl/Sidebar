@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
-
 .navbar {
     background-color: #18c29c;
     width: 78px;
@@ -43,11 +41,11 @@
 .navbar ul {
     margin-top: 30px;
     list-style: none;
+    transition: all 1s ease;
 }
 
 .navbar ul .texto {
     display: none;
-    transition: all 4s ease;
 }
 
 .navbar.active ul .texto {
@@ -150,4 +148,3 @@ ul li:nth-child(1) {
     cursor: pointer;
     transition: all 0.5s ease;
 }
-
